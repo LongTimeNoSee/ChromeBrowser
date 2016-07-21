@@ -6,3 +6,8 @@
 .DS_Store
 /build
 /captures
+.idea
+*.DS_Store
+*.log
+local.properties
+build

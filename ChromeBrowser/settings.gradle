@@ -1,1 +1,2 @@
-include ':app'
+include ':app', ':chromium:androidmedia_res', ':chromium:chrome_res', ':chromium:datausagechart_res',
+        ':chromium:content_res', ':chromium:ui_res'
