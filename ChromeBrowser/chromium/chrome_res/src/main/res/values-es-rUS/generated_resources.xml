@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<string name="infobar_update_permissions_button_text">"Actualizar permisos"</string>
+<string name="options_homepage_title">"Página principal"</string>
+<string name="autofill_from_google_account">"Google Payments"</string>
+</resources>

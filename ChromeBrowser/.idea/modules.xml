@@ -3,7 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ChromeBrowser.iml" filepath="$PROJECT_DIR$/ChromeBrowser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chromium/androidmedia_res/androidmedia_res.iml" filepath="$PROJECT_DIR$/chromium/androidmedia_res/androidmedia_res.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chromium/chrome_res/chrome_res.iml" filepath="$PROJECT_DIR$/chromium/chrome_res/chrome_res.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chromium/chromium.iml" filepath="$PROJECT_DIR$/chromium/chromium.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chromium/content_res/content_res.iml" filepath="$PROJECT_DIR$/chromium/content_res/content_res.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chromium/datausagechart_res/datausagechart_res.iml" filepath="$PROJECT_DIR$/chromium/datausagechart_res/datausagechart_res.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chromium/ui_res/ui_res.iml" filepath="$PROJECT_DIR$/chromium/ui_res/ui_res.iml" />
     </modules>
   </component>
 </project>

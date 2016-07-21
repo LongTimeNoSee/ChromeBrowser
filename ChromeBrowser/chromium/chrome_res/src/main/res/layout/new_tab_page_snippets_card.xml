@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2015 The Chromium Authors. All rights reserved.
+     Use of this source code is governed by a BSD-style license that can be
+     found in the LICENSE file. -->
+<RelativeLayout android:background="@drawable/bg_find_toolbar_popup" android:id="@+id/snippets_card_view" android:layout_height="wrap_content" android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+  
+    
+    
+  <ImageView android:contentDescription="@null" android:id="@+id/article_thumbnail" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_height="@dimen/snippets_thumbnail_size" android:layout_width="@dimen/snippets_thumbnail_size" android:padding="8dp" android:src="@null"/>
+  
+    
+    
+  <TextView android:id="@+id/article_headline" android:layout_height="wrap_content" android:layout_toRightOf="@+id/article_thumbnail" android:layout_width="match_parent" android:maxLines="2" android:paddingLeft="8dp" android:paddingRight="8dp" android:paddingTop="8dp" android:textColor="@color/snippets_headline_text_color" android:textSize="18sp"/>
+  
+    
+    
+  <TextView android:ellipsize="end" android:id="@+id/article_publisher" android:layout_below="@+id/article_headline" android:layout_height="wrap_content" android:layout_toRightOf="@+id/article_thumbnail" android:layout_width="match_parent" android:maxLines="1" android:padding="8dp" android:textColor="@color/snippets_publisher_name_color" android:textSize="14sp"/>
+  
+    
+    
+  <TextView android:id="@+id/article_snippet" android:layout_alignParentLeft="true" android:layout_below="@+id/article_thumbnail" android:layout_height="wrap_content" android:layout_width="match_parent" android:padding="8dp" android:textColor="@color/snippets_text_color" android:textSize="14sp" android:visibility="gone"/>
+  
+            
+     
+  <TextView android:id="@+id/read_more_link" android:layout_alignParentRight="true" android:layout_below="@+id/article_snippet" android:layout_height="wrap_content" android:layout_width="wrap_content" android:padding="16dp" android:text="@string/snippets_ntp_read_more_link_text" android:textAllCaps="true" android:textColor="@color/snippets_read_more_link_color" android:textSize="14sp" android:visibility="gone"/>
+  
+     
+
+</RelativeLayout>

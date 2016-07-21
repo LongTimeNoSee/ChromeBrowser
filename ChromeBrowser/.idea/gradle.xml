@@ -9,14 +9,15 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/chromium" />
+            <option value="$PROJECT_DIR$/chromium/androidmedia_res" />
+            <option value="$PROJECT_DIR$/chromium/chrome_res" />
+            <option value="$PROJECT_DIR$/chromium/content_res" />
+            <option value="$PROJECT_DIR$/chromium/datausagechart_res" />
+            <option value="$PROJECT_DIR$/chromium/ui_res" />
           </set>
         </option>
-        <option name="myModules">
-          <set>
-            <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/app" />
-          </set>
-        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
     </option>
   </component>
