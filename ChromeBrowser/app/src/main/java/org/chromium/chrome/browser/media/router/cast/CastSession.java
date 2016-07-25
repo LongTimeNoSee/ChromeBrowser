@@ -4,11 +4,6 @@
 
 package org.chromium.chrome.browser.media.router.cast;
 
-import android.content.Context;
-import android.os.Handler;
-import android.support.v4.util.ArrayMap;
-import android.util.SparseArray;
-
 import com.google.android.gms.cast.ApplicationMetadata;
 import com.google.android.gms.cast.Cast;
 import com.google.android.gms.cast.CastDevice;
@@ -29,12 +24,16 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.content.Context;
+import android.os.Handler;
+import android.support.v4.util.ArrayMap;
+import android.util.SparseArray;
+
 import java.io.IOException;
 import java.util.ArrayDeque;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Map;
 import java.util.Queue;
 import java.util.Set;
@@ -831,15 +830,15 @@ public class CastSession implements MediaNotificationListener {
     private void updateNamespaces() {
         if (mApplicationMetadata == null) return;
 
-        List<String> newNamespaces = mApplicationMetadata.getSupportedNamespaces();
-
-        Set<String> toRemove = new HashSet<String>(mNamespaces);
-        toRemove.removeAll(newNamespaces);
-        for (String namespaceToRemove : toRemove) unregisterNamespace(namespaceToRemove);
-
-        for (String newNamespace : newNamespaces) {
-            if (!mNamespaces.contains(newNamespace)) addNamespace(newNamespace);
-        }
+//        List<String> newNamespaces = mApplicationMetadata.getSupportedNamespaces();
+//
+//        Set<String> toRemove = new HashSet<String>(mNamespaces);
+//        toRemove.removeAll(newNamespaces);
+//        for (String namespaceToRemove : toRemove) unregisterNamespace(namespaceToRemove);
+//
+//        for (String newNamespace : newNamespaces) {
+//            if (!mNamespaces.contains(newNamespace)) addNamespace(newNamespace);
+//        }
     }
 
     private boolean isApiClientInvalid() {

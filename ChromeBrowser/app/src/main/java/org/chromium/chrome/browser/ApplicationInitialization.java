@@ -4,14 +4,14 @@
 
 package org.chromium.chrome.browser;
 
-import android.content.Context;
-import android.content.res.Resources;
-import android.util.TypedValue;
-
 import org.chromium.base.CommandLine;
 import org.chromium.chrome.R;
 import org.chromium.content.app.ContentApplication;
 import org.chromium.content.common.ContentSwitches;
+
+import android.content.Context;
+import android.content.res.Resources;
+import android.util.TypedValue;
 
 
 /**
@@ -35,10 +35,10 @@ public final class ApplicationInitialization {
         if (commandLine.hasSwitch(ChromeSwitches.DISABLE_FULLSCREEN)) return;
 
         TypedValue threshold = new TypedValue();
-        resources.getValue(R.floats.top_controls_show_threshold, threshold, true);
+        resources.getValue(R.dimen.top_controls_show_threshold, threshold, true);
         commandLine.appendSwitchWithValue(
                 ContentSwitches.TOP_CONTROLS_SHOW_THRESHOLD, threshold.coerceToString().toString());
-        resources.getValue(R.floats.top_controls_hide_threshold, threshold, true);
+        resources.getValue(R.dimen.top_controls_hide_threshold, threshold, true);
         commandLine.appendSwitchWithValue(
                 ContentSwitches.TOP_CONTROLS_HIDE_THRESHOLD, threshold.coerceToString().toString());
     }
