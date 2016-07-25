@@ -4,8 +4,10 @@ android {
     compileSdkVersion 23
     buildToolsVersion "23.0.3"
 
+    enforceUniquePackageName false
+
     defaultConfig {
-        minSdkVersion 19
+        minSdkVersion 14
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
@@ -27,5 +29,10 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:mediarouter-v7:23.1.1'
     testCompile 'junit:junit:4.12'
+    compile project(":chromium:ui_res")
+    compile project(":chromium:content_res")
+    compile project(":chromium:datausagechart_res")
+    compile project(":chromium:androidmedia_res")
 }
