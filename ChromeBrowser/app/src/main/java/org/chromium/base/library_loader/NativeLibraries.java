@@ -1,4 +1,4 @@
-package org.chromium.library_loader;
+package org.chromium.base.library_loader;
 import org.chromium.base.annotations.SuppressFBWarnings;
 @SuppressFBWarnings
 public class NativeLibraries {
