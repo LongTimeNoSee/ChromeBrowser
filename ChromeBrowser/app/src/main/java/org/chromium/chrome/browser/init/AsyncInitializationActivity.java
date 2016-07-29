@@ -4,6 +4,8 @@
 
 package org.chromium.chrome.browser.init;
 
+import com.baidu.mobstat.StatService;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -248,12 +250,16 @@ public abstract class AsyncInitializationActivity extends AppCompatActivity impl
     @Override
     public void onResume() {
         super.onResume();
+        StatService.onResume(this);
+
         mNativeInitializationController.onResume();
         if (mLaunchBehindWorkaround != null) mLaunchBehindWorkaround.onResume();
     }
 
     @Override
     public void onPause() {
+        StatService.onPause(this);
+
         mNativeInitializationController.onPause();
         super.onPause();
         if (mLaunchBehindWorkaround != null) mLaunchBehindWorkaround.onPause();
